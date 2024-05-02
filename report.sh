@@ -22,6 +22,7 @@ cat << EOF
   "machine":"$MACHINE",
   "chain":"$chain",
   "type":"node",
+  "version":"$version",
   "status":"$status",
   "message":"$message",
   "service":$service,
