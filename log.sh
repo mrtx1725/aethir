@@ -1,3 +1,3 @@
 #!/bin/bash
 
-tail -n 20 -f ~/aethir/logs/main-core-api.log
+tail -n 20 -f ~/aethir/log/main-core-api.log
