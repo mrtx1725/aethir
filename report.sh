@@ -2,7 +2,7 @@
 
 source ~/.bash_profile
 
-version=$(cat ~/aethir/log/main-core-api.log | grep "\"ver\" : " | head -1 | awk '{print $3}' | sed 's/\"|,//g')
+version=$(cat ~/aethir/log/main-core-api.log | grep "\"ver\" : " | head -1 | awk '{print $3}' | sed 's/\"\|,//g')
 service=$(sudo systemctl status aethird --no-pager | grep "active (running)" | wc -l)
 chain="testnet"
 id=aethir-$AETHIR_ID
