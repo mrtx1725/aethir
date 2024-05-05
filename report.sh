@@ -9,6 +9,7 @@ chain="testnet"
 id=aethir-$AETHIR_ID
 bucket=node
 
+#test
 #if [ $service -ne 1 ]
 #then 
 #  status="error";
