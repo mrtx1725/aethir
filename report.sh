@@ -4,6 +4,7 @@ source ~/.bash_profile
 
 version=$(cat ~/aethir/log/main-core-api.log | grep "\"ver\" : " | head -1 | awk '{print $3}' | sed 's/\"\|,//g')
 service=$(sudo systemctl status aethird --no-pager | grep "active (running)" | wc -l)
+pid=$(pidof AethirChecker)
 chain="testnet"
 id=aethir-$AETHIR_ID
 bucket=node
@@ -12,6 +13,14 @@ if [ $service -ne 1 ]
 then 
   status="error";
   message="service not running"
+else 
+  status="ok";
+fi
+
+if [ -z $pid ]
+then 
+  status="error";
+  message="process not running"
 else 
   status="ok";
 fi
@@ -26,6 +35,7 @@ cat << EOF
   "status":"$status",
   "message":"$message",
   "service":$service,
+  "pid":$pid,
   "updated":"$(date --utc +%FT%TZ)"
 }
 EOF
