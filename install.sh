@@ -11,7 +11,7 @@ cd ~/aethir
 #download
 echo "Downloading binary."
 wget $url aethir.tar
-untar aethir.tar
+tar -xvf aethir.tar --strip-components=1
 rm aethir.tar
 
 echo "Installation done."
