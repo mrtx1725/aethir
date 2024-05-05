@@ -9,13 +9,13 @@ chain="testnet"
 id=aethir-$AETHIR_ID
 bucket=node
 
-if [ $service -ne 1 ]
-then 
-  status="error";
-  message="service not running"
-else 
-  status="ok";
-fi
+#if [ $service -ne 1 ]
+#then 
+#  status="error";
+#  message="service not running"
+#else 
+#  status="ok";
+#fi
 
 if [ -z $pid ]
 then 
