@@ -15,3 +15,4 @@ tar -xvf aethir.tar --strip-components=1
 rm aethir.tar
 
 echo "Installation done."
+
