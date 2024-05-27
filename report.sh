@@ -10,8 +10,6 @@ id=aethir-$AETHIR_ID
 bucket=node
 
 
-
-
 #if [ $service -ne 1 ]
 #then 
 #  status="error";
