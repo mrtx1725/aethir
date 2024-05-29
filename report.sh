@@ -16,7 +16,7 @@ bucket=node
 #  message="service not running"
 #else 
 #  status="ok";
-#fi
+#fi 
 
 if [ -z $pid ]
 then 
