@@ -8,6 +8,8 @@ rm ~/aethir
 md ~/aethir
 cd ~/aethir
 
+
+
 #download
 echo "Downloading binary."
 wget $url aethir.tar
