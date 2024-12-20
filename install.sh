@@ -10,6 +10,8 @@ cd ~/aethir
 
 
 
+
+
 #download
 echo "Downloading binary."
 wget $url aethir.tar
